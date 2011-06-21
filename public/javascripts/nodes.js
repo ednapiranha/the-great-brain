@@ -153,9 +153,9 @@ var node_list = [
   },
   {
     "id": 20,
-    "url": "http://smooth-mist-685.heroku.com",
+    "url": "http://greatbrain.thomascheng.com",
     "author": "Thomas Cheng",
-    "personal_url": "http://blog.thomascheng.com",
+    "personal_url": "http://www.thomascheng.com",
     "time": 1000,
     "tags": "image"
   }
