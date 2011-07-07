@@ -31,6 +31,7 @@ var Neuronator = function() {
         sibling_node_frame.attr('data-id', node_list[i].id);
         result.append(sibling_node_frame);
       });
+      return true;
     },
     pingNode: function(ping_state, node_id) {    
       try {
