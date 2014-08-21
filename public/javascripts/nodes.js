@@ -72,14 +72,6 @@ var node_list = [
     "tags": "image, audio"
   },
   {
-    "id": 10,
-    "url": "http://php-neuron.phpfogapp.com",
-    "author": "Chris Mendis",
-    "personal_url": "http://flavors.me/chrismendis",
-    "time": 1000,
-    "tags": "image"
-  },
-  {
     "id": 11,
     "url": "http://freezing-sky-937.herokuapp.com",
     "author": "Paul Kalupnieks",
@@ -150,13 +142,5 @@ var node_list = [
     "personal_url": "http://ednapiranha.com",
     "time": 3000,
     "tags": "audio"
-  },
-  {
-    "id": 20,
-    "url": "http://greatbrain.thomascheng.com",
-    "author": "Thomas Cheng",
-    "personal_url": "http://www.thomascheng.com",
-    "time": 1000,
-    "tags": "image"
   }
 ];
