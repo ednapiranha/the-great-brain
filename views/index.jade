@@ -1,66 +1,56 @@
-div(class='wrapper')
-  h1 The Great Brain 
+extend layout
 
-  p An experimental simulation of the brain as a simple process of remote node communication
-  
-  p(class='watch') <a href="/brain?debug=true">Watch Now</a>
-  
-  h2 What is it?
-  
-  p The Great Brain is a database-less and authentication-free project that sends and receives boolean data between remote servers. Each remote server the brain connects to is considered a 'node', which responds with one of the following: text, an image, audio or a video.
-  
-  p In this basic format, the key is to keep the code as minimal as possible and vary the HTML content response as much as possible.
-  
-  h2 How can I contribute?
-  
-  p Feel free to fork any of our sample nodes below and replace with your respective content. The sample nodes are all developed in <a href="http://www.sinatrarb.com">Sinatra</a>, <a href="http://haml-lang.com">Haml</a> and <a href="http://sass-lang.com">Sass</a>. Once you are happy with your node, deploy to a server where we can access the site. An easy place to deploy to is <a href="http://www.heroku.com">Heroku</a>.
-  
-  section(class='howto')
-    h2 Contribution Requirements
-    
-    p You can create a node in any language that you want and host on any server that we can access. The only requirements we need are two API JSONP (GET) calls - one returning HTML and the other returning a 0 or 1. The API specifics are outlined below:
-    
-    ol
-      li
-        Create one API call at "/generate?callback=?" that returns in the following JSON response:
-        pre
-          code
-            {
-              "result": "&lt;img src='http://myawesomenode.com/images/somethingcrazy.gif' /&gt;"
-            }
-      li
-        Create one API call at "/pong?callback=?" that returns JSON as either 0 or 1. Randomization of these two values is ideal, but it is up to you to decide how you want to determine the response value. The format should be as follows:
-        pre
-          code
-            {
-              "result": 0
-            }
-    
-    p After you create the node, the easiest way to let us know is to create a public repository on <a href="http://github.com">Github</a>, fork <a href="https://github.com/ednapiranha/the-great-brain">The Great Brain</a> and send a pull request to add your node to our main <a href="https://github.com/ednapiranha/the-great-brain/blob/master/public/javascripts/nodes.js">node list</a>.
-    
-    p Currently we will support any HTML tags, except &lt;script&gt; and &lt;style&gt;. Our whitelist of attributes currently include 'src', 'autoplay' and 'style'. If your node is found to be problematic (e.g. you're attempting to do bad things or the server is down), we will remove it from the master list until it is fixed.
-          
-  h2 Technical Notes
-  
-  p This currently works best with the latest version of <a href="http://www.mozilla.com/firefox/fx">Firefox</a>.
-  
-  section
-    h2 Github Repositories
-    
-    ul
-      li The Great Brain: <a href="https://github.com/ednapiranha/the-great-brain">the-great-brain</a>
-      li Sample Node in Sinatra (Ruby): <a href="https://github.com/ednapiranha/message-from-our-sponsors">message-from-our-sponsors</a>
-      li Sample Node in Limonade (PHP): <a href="https://github.com/chrismendis/greatbrain-php-node">greatbrain-php-node</a>
-    
-    p Maintained by <a href="http://twitter.com/ednapiranha">Jen</a> and <a href="https://twitter.com/secretrobotron">Bobby</a>
-    
-script(type='text/javascript')
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-4319539-32']);
-  _gaq.push(['_trackPageview']);
+block content
+  div(class='wrapper')
+    h1 The Great Brain
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    p An experimental simulation of the brain as a simple process of remote node communication
+
+    p(class='watch') <a href="/brain?debug=true">Watch Now</a>
+
+    h2 What is it?
+
+    p The Great Brain is a database-less and authentication-free project that sends and receives boolean data between remote servers. Each remote server the brain connects to is considered a 'node', which responds with one of the following: text, an image, audio or a video.
+
+    p In this basic format, the key is to keep the code as minimal as possible and vary the HTML content response as much as possible.
+
+    h2 How can I contribute?
+
+    p Feel free to fork any of our sample nodes below and replace with your respective content. The sample nodes are all developed in <a href="http://www.sinatrarb.com">Sinatra</a>, <a href="http://haml-lang.com">Haml</a> and <a href="http://sass-lang.com">Sass</a>. Once you are happy with your node, deploy to a server where we can access the site. An easy place to deploy to is <a href="http://www.heroku.com">Heroku</a>.
+
+    section(class='howto')
+      h2 Contribution Requirements
+
+      p You can create a node in any language that you want and host on any server that we can access. The only requirements we need are two API JSONP (GET) calls - one returning HTML and the other returning a 0 or 1. The API specifics are outlined below:
+
+      ol
+        li Create one API call at "/generate?callback=?" that returns in the following JSON response:
+          pre
+            code
+              | {
+              |   "result": "&lt;img src='http://myawesomenode.com/images/somethingcrazy.gif' /&gt;"
+              | }
+        li Create one API call at "/pong?callback=?" that returns JSON as either 0 or 1. Randomization of these two values is ideal, but it is up to you to decide how you want to determine the response value. The format should be as follows:
+          pre
+            code
+              | {
+              |   "result": 0
+              | }
+
+      p After you create the node, the easiest way to let us know is to create a public repository on <a href="http://github.com">Github</a>, fork <a href="https://github.com/ednapiranha/the-great-brain">The Great Brain</a> and send a pull request to add your node to our main <a href="https://github.com/ednapiranha/the-great-brain/blob/master/public/javascripts/nodes.js">node list</a>.
+
+      p Currently we will support any HTML tags, except &lt;script&gt; and &lt;style&gt;. Our whitelist of attributes currently include 'src', 'autoplay' and 'style'. If your node is found to be problematic (e.g. you're attempting to do bad things or the server is down), we will remove it from the master list until it is fixed.
+
+    h2 Technical Notes
+
+    p This currently works best with the latest version of <a href="http://www.mozilla.com/firefox/fx">Firefox</a>.
+
+    section
+      h2 Github Repositories
+
+      ul
+        li The Great Brain: <a href="https://github.com/ednapiranha/the-great-brain">the-great-brain</a>
+        li Sample Node in Sinatra (Ruby): <a href="https://github.com/ednapiranha/message-from-our-sponsors">message-from-our-sponsors</a>
+        li Sample Node in Limonade (PHP): <a href="https://github.com/chrismendis/greatbrain-php-node">greatbrain-php-node</a>
+
+      p Maintained by <a href="http://twitter.com/ednapiranha">Jen</a> and <a href="https://twitter.com/secretrobotron">Bobby</a>
