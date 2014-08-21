@@ -1,9 +1,12 @@
 {
-    "name": "greatbrain"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.3.11"
-    , "jade": "~0.0.1"
+  "name": "greatbrain",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "0.4.1"
+  },
+  "dependencies": {
+    "express": "2.3.11",
+    "jade": "0.0.1"
   }
 }
