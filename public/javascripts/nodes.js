@@ -1,7 +1,7 @@
 var node_list = [
   {
     "id": 1,
-    "url": "http://love-hate.heroku.com",
+    "url": "http://love-hate.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -9,7 +9,7 @@ var node_list = [
   },
   {
     "id": 2,
-    "url": "http://hollow-robot-198.heroku.com",
+    "url": "http://hollow-robot-198.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -17,7 +17,7 @@ var node_list = [
   },
   {
     "id": 3,
-    "url": "http://morning-beach-732.heroku.com",
+    "url": "http://morning-beach-732.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -25,7 +25,7 @@ var node_list = [
   },
   {
     "id": 4,
-    "url": "http://smooth-mist-685.heroku.com",
+    "url": "http://smooth-mist-685.herokuapp.com",
     "author": "Thomas Cheng",
     "personal_url": "http://blog.thomascheng.com",
     "time": 100,
@@ -33,7 +33,7 @@ var node_list = [
   },
   {
     "id": 5,
-    "url": "http://hollow-mountain-667.heroku.com",
+    "url": "http://hollow-mountain-667.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -41,7 +41,7 @@ var node_list = [
   },
   {
     "id": 6,
-    "url": "http://floating-warrior-161.heroku.com",
+    "url": "http://floating-warrior-161.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -57,7 +57,7 @@ var node_list = [
   },
   {
     "id": 8,
-    "url": "http://gentle-earth-856.heroku.com",
+    "url": "http://gentle-earth-856.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -65,7 +65,7 @@ var node_list = [
   },
   {
     "id": 9,
-    "url": "http://empty-stone-648.heroku.com",
+    "url": "http://empty-stone-648.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -81,7 +81,7 @@ var node_list = [
   },
   {
     "id": 11,
-    "url": "http://severe-ice-850.heroku.com",
+    "url": "http://severe-ice-850.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -89,7 +89,7 @@ var node_list = [
   },
   {
     "id": 12,
-    "url": "http://high-earth-684.heroku.com",
+    "url": "http://high-earth-684.herokuapp.com",
     "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
     "time": 100,
@@ -97,7 +97,7 @@ var node_list = [
   },
   {
     "id": 13,
-    "url": "http://empty-stone-648.heroku.com",
+    "url": "http://empty-stone-648.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -105,7 +105,7 @@ var node_list = [
   },
   {
     "id": 14,
-    "url": "http://floating-warrior-161.heroku.com",
+    "url": "http://floating-warrior-161.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -113,7 +113,7 @@ var node_list = [
   },
   {
     "id": 15,
-    "url": "http://love-hate.heroku.com",
+    "url": "http://love-hate.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -121,7 +121,7 @@ var node_list = [
   },
   {
     "id": 16,
-    "url": "http://gentle-earth-856.heroku.com",
+    "url": "http://gentle-earth-856.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -129,7 +129,7 @@ var node_list = [
   },
   {
     "id": 17,
-    "url": "http://severe-ice-850.heroku.com",
+    "url": "http://severe-ice-850.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
@@ -137,7 +137,7 @@ var node_list = [
   },
   {
     "id": 18,
-    "url": "http://morning-beach-732.heroku.com",
+    "url": "http://morning-beach-732.herokuapp.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "time": 100,
